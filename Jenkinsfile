@@ -3,9 +3,8 @@ pipeline {
 
     stages{
         stage('GIT CHECKOUT'){
-            steps{
+            steps {
                 git branch: 'main', url: 'https://github.com/keshavbhrdwaj/CICD.git'
-
             }
         }
     }
