@@ -1,12 +1,11 @@
 pipeline {
     agents any
 
-    stages{
+    stages {
         stage('GIT CHECKOUT'){
             steps {
                 git branch: 'main', url: 'https://github.com/keshavbhrdwaj/CICD.git'
             }
         }
     }
-
 }
