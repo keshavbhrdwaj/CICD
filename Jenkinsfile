@@ -7,5 +7,10 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/keshavbhrdwaj/CICD.git'
             }
         }
+        stage('UNIT TESTING'){
+            steps {
+                sh 'mvn test'
+            }
+        }
     }
 }
